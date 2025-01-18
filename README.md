@@ -99,10 +99,10 @@ stow --simulate zsh
 
 ## Troubleshooting
 
-*  Premissions Errors: Ensure you have write permissions to your `$HOME` directory.
+*  **Premissions Errors:** Ensure you have write permissions to your `$HOME` directory.
 
-*  Incorrect Symlinks: Verify that the directory structure within each subdirectory mirrors the intended paths in `$HOME`.
+*  **Incorrect Symlinks:** Verify that the directory structure within each subdirectory mirrors the intended paths in `$HOME`.
 
-*  Conflicting Files: If `stow` cannot create a symlink because a file already exists, back up or remove the conflicting file.
+*  **Conflicting Files:** If `stow` cannot create a symlink because a file already exists, back up or remove the conflicting file.
 
 ---
