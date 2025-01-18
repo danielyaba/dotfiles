@@ -75,14 +75,15 @@ stow -D */
 ## Best Practices
 
 * ##### Backup existing Files:
-Before running `Before running stow, ensure no conflicting files already exist in your $HOME directory. Backup or delete them if needed. For example:stow`, ensure no conflicting files already exist in your $HOME directory. Backup or delete them if needed. For example:
+Before running stow, ensure no conflicting files already exist in your `$HOME` directory.   
+Backup or delete them if needed. For example:
 
 ```
 mv ~/.zshrc ~/.zshrc.bak
 ```
 
 * #### Ignore Files:
-To skip specific files or directories during the stowing process, create a .stow-global-ignore file in your repository. For example:
+To skip specific files or directories during the stowing process, create a `.stow-global-ignore` file in your repository. For example:
 
 ```
 README.md
@@ -98,13 +99,10 @@ stow --simulate zsh
 
 ## Troubleshooting
 
-* #### Premissions Errors: 
-Ensure you have write permissions to your `$HOME` directory.
+*  Premissions Errors: Ensure you have write permissions to your `$HOME` directory.
 
-* #### Incorrect Symlinks: 
-Verify that the directory structure within each subdirectory mirrors the intended paths in `$HOME`.
+*  Incorrect Symlinks: Verify that the directory structure within each subdirectory mirrors the intended paths in `$HOME`.
 
-* #### Conflicting Files: 
-If `stow` cannot create a symlink because a file already exists, back up or remove the conflicting file.
+*  Conflicting Files: If `stow` cannot create a symlink because a file already exists, back up or remove the conflicting file.
 
 ---
