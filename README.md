@@ -72,7 +72,7 @@ To remove all symlinks:
 stow -D */
 ```
 
-### Best Practice
+## Best Practices
 
 * ##### Backup existing Files:
 Before running `Before running stow, ensure no conflicting files already exist in your $HOME directory. Backup or delete them if needed. For example:stow`, ensure no conflicting files already exist in your $HOME directory. Backup or delete them if needed. For example:
@@ -96,7 +96,7 @@ stow --simulate zsh
 ```
 
 
-### Troubleshooting
+## Troubleshooting
 
 * #### Premissions Errors: 
 Ensure you have write permissions to your `$HOME` directory.
