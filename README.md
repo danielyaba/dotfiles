@@ -49,7 +49,6 @@ ln -s $(pwd)/zsh ~/.config/zsh
 if [ -f ~/.tmux.conf ]; then
     rm -f ~/.tmux.conf
 fi
-
 ln -s $(pwd)/tmux/.tmux.conf ~/.tmux.conf
 ```
 
