@@ -1,6 +1,6 @@
 # My Dev Environment Files
 
-IMPORTANT: These are primarly meant for inspiration. I wouldn't just blindly use them. Proceed at your own risk!  
+**IMPORTANT:** These are primarly meant for inspiration. I wouldn't just blindly use them. Proceed at your own risk!  
 This guide explains how to install GNU Stow and use it to manage your dotfiles by creating symlinks in your `$HOME` directory.
 
 ---
