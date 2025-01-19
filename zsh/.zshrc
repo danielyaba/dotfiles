@@ -157,14 +157,13 @@ alias hu='HTTPS_PROXY=localhost:8888 helm upgrade'
 alias hl='HTTPS_PROXY=localhost:8888 helm list'
 
 ### Docker aliases ###
-alias dockerrm='docker rm -f $(docker ps -aq)'
-alias dockerstp='docker stop $(docker ps -aq)'
-alias dockerrmi='docker rmi -f $(docker images -q) && docker images'
+source ~/.config/zsh/aliases/docker_aliases.zsh
+# alias dockerrm='docker rm -f $(docker ps -aq)'
+# alias dockerstp='docker stop $(docker ps -aq)'
+# alias dockerrmi='docker rmi -f $(docker images -q) && docker images'
 
 ### gcloud aliasses ###
-alias gal='gcloud auth login'
-alias gadl='gcloud auth application-default login'
-alias gali='gcloud auth list'
+source ~/.config/zsh/aliases/gcloud_aliases.zsh
 
 ### LazyGit aliases ###
 alias lg='lazygit'
