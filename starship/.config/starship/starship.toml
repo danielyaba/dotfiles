@@ -2,7 +2,6 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$fill\
 $python\
 $lua\
 $nodejs\
@@ -11,7 +10,7 @@ $haskell\
 $rust\
 $ruby\
 $package\
-$aws\
+$gcloud\
 $docker_context\
 $jobs\
 $cmd_duration\
@@ -82,7 +81,7 @@ symbol = '󰏗 '
 [gcloud]
 symbol = '☁️ '
 style = 'yellow'
-format = 'on [$symbol$account(@$domain)(\($region\))]($style) '
+format = 'on [$symbol$account(@$domain)]($style) '
 
 [docker_context]
 symbol = ' '
