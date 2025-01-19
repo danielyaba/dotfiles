@@ -28,3 +28,15 @@ brew install zoxide
 
 # install helm
 brew install helm
+
+# install docker desktop
+brew install --cask docker
+
+# install tmux
+brew install tmux
+
+# install k9s
+brew install k9s
+
+# install kubectx
+brew install kubectx
