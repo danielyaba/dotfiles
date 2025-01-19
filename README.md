@@ -36,7 +36,7 @@ mkdir -p ~/.config/nvim
 ln -s $(pwd)/nvim ~/.config/nvim
 ```
 
-### Alises
+### Aliseses
 ```bash
 mkdir -p ~/.config/zsh
 ln -s $(pwd)/zsh ~/.config/zsh
