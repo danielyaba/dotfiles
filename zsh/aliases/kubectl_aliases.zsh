@@ -1,4 +1,4 @@
-### GLOBAL ALIASES ###
+### KUBECTL ALIASES ###
 alias kubectl='HTTPS_PROXY=localhost:8888 kubectl'
 alias kcx='HTTPS_PROXY=localhost:8888 kubectx'
 alias k9s='HTTPS_PROXY=localhost:8888 k9s'

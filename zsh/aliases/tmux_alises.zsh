@@ -1,4 +1,4 @@
-### TMUX aliases ###
+### TMUX ALIASES ###
 alias td='tmux detach'
 alias ta='tmux attach -t'
 alias tk='tmux kill-session -t'

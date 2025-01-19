@@ -1,4 +1,4 @@
-### Docker aliases ###
+### Docker ALIASES ###
 alias db='docker build -t'
 alias di='docker images'
 alias dockerhub='web_search dockerhub'
