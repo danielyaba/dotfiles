@@ -5,6 +5,15 @@ This guide explains how to install GNU Stow and use it to manage your dotfiles b
 
 ---
 
+## Installation
+clone the repo and run install.sh script:
+```bash
+git clone https://github.com/danielyaba/dev-environment-files.git 
+cd dev-environment-files
+chmod +x install.sh
+./install.sh
+```
+
 ### Creating symlinks
 
 #### Starship
