@@ -42,4 +42,10 @@ mkdir -p ~/.config/zsh
 ln -s $(pwd)/zsh ~/.config/zsh
 ```
 
+
+### Tmux
+```bash
+ln -s $(pwd)/tmux/.tmux.conf ~/.tmux.conf
+```
+
 ---
