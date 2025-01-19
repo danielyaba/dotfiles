@@ -14,7 +14,7 @@ ln -s $(pwd)/starship/starship.toml ~/.config/starship/starship.toml
 ```
 
 #### ZSH
-```
+```bash
 if [ -f ~/.zshrc ]; then
     rm -f ~/.zshrc
 fi
@@ -22,9 +22,15 @@ ln -s $(pwd)/zsh/.zshrc ~/.zshrc
 ```
 
 ### NeoVim
-```
+```bash
 mkdir -p ~/.config/nvim
-ln -s $(pwd)/nvim ~/.config/nvim/
+ln -s $(pwd)/nvim ~/.config/nvim
+```
+
+### Alises
+```bash
+mkdir -p ~/.config/zsh
+ln -s $(pwd)/zsh ~/.config/zsh
 ```
 
 ---
