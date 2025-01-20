@@ -113,80 +113,44 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-### Useful aliases ###
-alias ll='ls -lha'
-alias install='brew install'
-alias uninstall='brew uninstall'
-alias refresh='source ~/.zshrc'
-alias cat='bat --paging never --theme DarkNeon'
-alias ls='eza -l --icons=always'
-alias edit-zsh='nvim ~/.zshrc'
+### USEFUL ALIASES ###
+source ~/.config/zsh/aliases/global_aliases.zsh
 
-### K8s aliases ###
-alias k='HTTPS_PROXY=localhost:8888 kubectl'
-alias kg='HTTPS_PROXY=localhost:8888 kubectl get'
-alias kd='HTTPS_PROXY=localhost:8888 kubectl describe'
-alias kl='HTTPS_PROXY=localhost:8888 kubectl logs -f'
-alias kl1='HTTPS_PROXY=localhost:8888 kubectl logs -f $(kubectl get pods -o custom-columns=:metadata.name --no-headers | sed -n 1p)'
-alias kl2='HTTPS_PROXY=localhost:8888 kubectl logs -f $(kubectl get pods -o custom-columns=:metadata.name --no-headers | sed -n 2p)'
-alias ka='HTTPS_PROXY=localhost:8888 kubectl apply -f'
-alias kr='HTTPS_PROXY=localhost:8888 kubectl run'
-alias ke='kuectl exec -it'
-alias kgp='HTTPS_PROXY=localhost:8888 kubectl get pods'
-alias kdp='HTTPS_PROXY=localhost:8888 kubectl describe pods'
-alias kdp1='HTTPS_PROXY=localhost:8888 kubectl describe pod $(kubectl get pods -o custom-columns=:metadata.name --no-headers | sed -n 1p)'
-alias kdp2='HTTPS_PROXY=localhost:8888 kubectl describe pod $(kubectl get pods -o custom-columns=:metadata.name --no-headers | sed -n 2p)'
-alias kdel='HTTPS_PROXY=localhost:8888 kubectl delete pod'
-alias kgs='HTTPS_PROXY=localhost:8888 kubectl get secrets'
-alias kds='HTTPS_PROXY=localhost:8888 kubectl describe secrets'
-alias kgi='HTTPS_PROXY=localhost:8888 kubectl get ingress'
-alias kdi='HTTPS_PROXY=localhost:8888 kubectl describe ingress'
-alias kgsvc='HTTPS_PROXY=localhost:8888 kubectl get svc'
-alias kgcm='HTTPS_PROXY=localhost:8888 kubectl get configmap'
-alias kubens='HTTPS_PROXY=localhost:8888 kubens'
-alias kubectl='HTTPS_PROXY=localhost:8888 kubectl'
-alias kns='HTTPS_PROXY=localhost:8888 kubens'
-alias kcx='HTTPS_PROXY=localhost:8888 kubectx'
-alias k9s='HTTPS_PROXY=localhost:8888 k9s'
+### KUBECTL ALIASES ###
+source ~/.config/zsh/aliases/kubectl_aliases.zsh
 
-### HTTP_PROXY=localhost:8888 helm aliases ###
-alias helm='HTTPS_PROXY=localhost:8888 helm'
-alias h='HTTPS_PROXY=localhost:8888 helm'
-alias hi='HTTPS_PROXY=localhost:8888 helm install'
-alias hu='HTTPS_PROXY=localhost:8888 helm upgrade'
-alias hl='HTTPS_PROXY=localhost:8888 helm list'
+### HELM ALIASES ###
+source ~/.config/zsh/aliases/helm_aliases.zsh
 
-### Docker aliases ###
+### DOCKER ALIASES ###
 source ~/.config/zsh/aliases/docker_aliases.zsh
-# alias dockerrm='docker rm -f $(docker ps -aq)'
-# alias dockerstp='docker stop $(docker ps -aq)'
-# alias dockerrmi='docker rmi -f $(docker images -q) && docker images'
 
-### gcloud aliasses ###
+### GCLOUD ALIASES ###
 source ~/.config/zsh/aliases/gcloud_aliases.zsh
 
-### LazyGit aliases ###
-alias lg='lazygit'
+### TMUX ALIASES ###
+source ~/.config/zsh/aliases/tmux_alises.zsh
 
 ### Local Development Applications ###
 alias argocd='HTTPS_PROXY=localhost:8888 kubectl get secret argocd-initial-admin-secret -n argocd -o json | jq -r '.data.password' | base64 -d \
   && echo "" \
   && HTTPS_PROXY=localhost:8888 kubectl port-forward svc/argocd-server 8080:80 -n argocd'
-
 alias backstage='HTTPS_PROXY=localhost:8888 kubectl port-forward svc/backstage 7007:7007 -n backstage'
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/daniely/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daniely/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/daniely/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daniely/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
-
+### NEOVIM ###
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-
-### Fuzzy Finder aliases ###
+### FUZZY FINDER ###
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS='--height=60% --preview="bat --color=always {}" --preview-window=right:60%:wrap'
+
+### STARSHIP ###
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+eval "$(starship init zsh)"
