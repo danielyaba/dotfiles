@@ -1,0 +1,6 @@
+[kubectl]
+aliases_file = "~/.config/zsh/aliases/kubectl_aliases.zsh"
+
+[helm]
+aliases_file = "~/.config/zsh/aliases/helm_aliases.zsh"
+
