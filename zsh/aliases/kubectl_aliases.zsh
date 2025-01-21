@@ -1,8 +1,8 @@
 ### KUBECTL ALIASES ###
 alias kubectl='kubectl'
-alias kcx='HTTPS_PROXY=localhost:8888 kubectx'
-alias k9s='HTTPS_PROXY=localhost:8888 k9s'
-alias kubens='HTTPS_PROXY=localhost:8888 kubens'
+alias kubectx='kubectx'
+alias k9s='k9s'
+alias kubens='kubens'
 alias ke='kubectl exec -it'
 alias ka='kubectl apply -f'
 alias kg='kubectl get'
