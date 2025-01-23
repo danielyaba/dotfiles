@@ -154,3 +154,6 @@ export FZF_DEFAULT_OPTS='--height=60% --preview="bat --color=always {}" --previe
 ### STARSHIP ###
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+### ZOXIDE ###
+eval "$(zoxide init zsh)"

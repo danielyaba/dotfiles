@@ -1,4 +1,5 @@
 ### KUBECTL ALIASES ###
+alias k='kubectl'
 alias kubectl='kubectl'
 alias kubectx='kubectx'
 alias k9s='k9s'
@@ -27,7 +28,7 @@ alias kdeld='kubectl delete deployment'
 
 ### PODS ###
 alias kgp='kubectl get pods'
-alias kgpo='kubectl get pods -o wide'
+alias kgpw='kubectl get pods -o wide'
 alias kgpy='kubectl get pods -o yaml'
 alias kgpj='kubectl get pods -o json'
 alias kdp='kubectl describe pods'
@@ -42,6 +43,8 @@ alias kdelp='kubectl delete pods'
 ### SECRETS ###
 alias kgs='kubectl get secrets'
 alias kds='kubectl describe secrets'
+alias kgsy='kubectl get secrets -o yaml'
+alias kgsj='kubectl get secrets -o json'
 
 
 ### SERVICE ###
@@ -60,6 +63,8 @@ alias kdeli='kubectl del ingress'
 alias kgcm='kubectl get configmap'
 alias kdcm='kubectl describe configmap'
 alias kdelcm='kubectl delete configmap'
+alias kgcmy='kubectl get configmap -o yaml'
+alias kgcmj='kubectl get configmap -o json'
 
 
 ### CROSSPLANE ###
