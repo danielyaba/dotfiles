@@ -16,6 +16,9 @@ brew install yq
 # install fzf
 brew install fzf
 
+# install starship
+brew install starship
+
 # install nerd-fonst
 brew tap homebrew/cask-fonts
 brew install font-meslo-lg-nerd-font
