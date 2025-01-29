@@ -1,9 +1,9 @@
 ### KUBECTL ALIASES ###
 alias k='kubectl'
 alias kubectl='kubectl'
-alias kubectx='kubectx'
 alias k9s='k9s'
 alias kubens='kubens'
+alias kns='kubens'
 alias ke='kubectl exec -it'
 alias ka='kubectl apply -f'
 alias kg='kubectl get'
