@@ -13,6 +13,9 @@ brew instal jq
 # install yq for parsing YAML files
 brew install yq
 
+# install fzf
+brew install fzf
+
 # install nerd-fonst
 brew tap homebrew/cask-fonts
 brew install font-meslo-lg-nerd-font
