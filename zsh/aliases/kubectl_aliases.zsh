@@ -24,6 +24,8 @@ alias kl5='kubectl logs -f $(kubectl get pods -o custom-columns=:metadata.name -
 alias kgd='kubectl get deployment'
 alias kdd='kubectl describe deployment'
 alias kdeld='kubectl delete deployment'
+alias kgpy='kubectl get deployment -o yaml'
+alias kgpj='kubectl get deployment -o json'
 
 
 ### PODS ###
@@ -57,6 +59,8 @@ alias kdelsvc='kubectl delete service'
 alias kgi='kubectl get ingress'
 alias kdi='kubectl describe ingress'
 alias kdeli='kubectl del ingress'
+alias kgiy='kubectl get ingress -o yaml'
+alias kgij='kubectl get ingress -o json'
 
 
 ### CONFIG-MAP ###
@@ -65,6 +69,13 @@ alias kdcm='kubectl describe configmap'
 alias kdelcm='kubectl delete configmap'
 alias kgcmy='kubectl get configmap -o yaml'
 alias kgcmj='kubectl get configmap -o json'
+
+
+### NAMESPACE ###
+alias kgns='kubectl get namespace'
+alias kdelns='kubectl delete namespace'
+alias kgnsy='kubectl get namespace -o yaml'
+alias kgnsj='kubectl get namespace -o json'
 
 
 ### CROSSPLANE ###
