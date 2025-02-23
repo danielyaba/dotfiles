@@ -82,6 +82,7 @@ plugins=(
   gcloud
   sudo
   python-venv-activator
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -157,3 +158,6 @@ eval "$(starship init zsh)"
 
 ### ZOXIDE ###
 eval "$(zoxide init zsh)"
+
+### GKE-PRIVATE-TUNNELLER ###
+export PRIVATE_GKE_TUNNELLER_CONFIG="$HOME/.config/private-gke-tunneller/config.toml" 

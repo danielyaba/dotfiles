@@ -12,7 +12,7 @@ alias kdel='kubectl delete'
 
 
 ### KUBECTL LOGS ###
-alias kl='kubectl logs -f'
+alias kl='kubectl logs -f $(kubectl get pods -o custom-columns=:metadata.name --no-headers  | fzf --preview="" --tmux --border=rounded)'
 alias kl1='kubectl logs -f $(kubectl get pods -o custom-columns=:metadata.name --no-headers | sed -n 1p)'
 alias kl2='kubectl logs -f $(kubectl get pods -o custom-columns=:metadata.name --no-headers | sed -n 2p)'
 alias kl3='kubectl logs -f $(kubectl get pods -o custom-columns=:metadata.name --no-headers | sed -n 3p)'
