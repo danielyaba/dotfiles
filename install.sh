@@ -32,6 +32,15 @@ brew install eza
 # install zoxide for cd shortcuts 
 brew install zoxide
 
+# install makefile
+brew install make
+
+# install justfile
+brew install just
+
+# install k3d
+brew install k3d
+
 # install helm
 brew install helm
 
