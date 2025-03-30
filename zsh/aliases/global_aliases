@@ -1,0 +1,33 @@
+### USEFUL ALIASES ###
+alias ll='ls -lha'
+alias reload='source ~/.zshrc'
+alias n='nvim .'
+alias c='clear'
+
+# LazyGit
+alias lg='lazygit'
+
+# Zoxide
+alias cd='z'
+
+# Eza
+alias l="eza -l --icons --git -a"
+alias lt="eza --tree --level=2 --long --icons --git"
+alias ltree="eza --tree --level=2  --icons --git"
+alias ls='eza -l --icons=always'
+
+# Bat
+alias cat='bat --paging never --theme DarkNeon'
+
+# Brew
+alias install='brew install'
+alias uninstall='brew uninstall'
+
+# Config files
+alias edit-zsh='nvim ~/.zshrc'
+alias edit-tmux='nvim ~/.tmux.conf'
+alias edit-wez='nvim ~/.config/wezterm/wezterm.lua'
+alias edit-ss='nvim ~/.config/starship/starship.toml'
+alias edit-conf='nvim ~/.config/'
+alias edit-aliases='nvim ~/.config/aliases'
+alias edit-nvim='nvim ~/.config/nvim'
