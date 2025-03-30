@@ -55,3 +55,6 @@ brew install k9s
 
 # install kubectx
 brew install kubectx
+
+# install Terraform
+brew install terraform
