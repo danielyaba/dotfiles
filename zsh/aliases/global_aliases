@@ -1,4 +1,4 @@
-### USEFUL ALIASES ###
+# USEFUL ALIASES
 alias ll='ls -lha'
 alias reload='source ~/.zshrc'
 alias n='nvim .'
@@ -31,3 +31,16 @@ alias edit-ss='nvim ~/.config/starship/starship.toml'
 alias edit-conf='nvim ~/.config/'
 alias edit-aliases='nvim ~/.config/aliases'
 alias edit-nvim='nvim ~/.config/nvim'
+
+# Fuzzy Finder
+alias fn='nvim $(fzf)'
+# alias fc='cd $(fzf --walker=dir --tmux --border=rounded --preview="" --prompt="Select Directory: " --layout=reverse)'
+alias fh='history | fzf --tmux --border=rounded --preview="" --prompt="Command history: " --layout=reverse'
+fcd () {
+  local dir=$(fzf --walker=dir --tmux --border=rounded --preview="" --prompt="Select Directory: " --layout=reverse)
+  if [[ -n "$dir" ]]; then
+    cd "$dir"
+  else
+    cd $(PWD)
+  fi
+}
